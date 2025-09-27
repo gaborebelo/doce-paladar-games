@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Doce Paladar • Jogue e Ganhe</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="theme-color" content="#ff7a00">
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.png" alt="Doce Paladar" class="logo" />
+    <h1>Jogue e Ganhe</h1>
+    <p>Escolha um jogo e concorra a prêmios!</p>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="#/roleta">
+      <h2>🎡 Roleta do Sabor</h2><p>Gire e descubra seu brinde</p>
+    </a>
+    <a class="card" href="#/baus">
+      <h2>🧰 3 Baús</h2><p>Escolha um e boa sorte</p>
+    </a>
+    <a class="card" href="#/ninja">
+      <h2>🥟 Coxinha Ninja</h2><p>Capture 5 em 10s</p>
+    </a>
+  </main>
+
+  <section id="game"></section>
+  <div id="toast" role="status"></div>
+
+  <footer>
+    <small>© Doce Paladar</small>
+  </footer>
+
+  <script src="./main.js"></script>
+  <script src="./games/roulette.js"></script>
+  <script src="./games/chests.js"></script>
+  <script src="./games/catcher.js"></script>
+</body>
+</html>
